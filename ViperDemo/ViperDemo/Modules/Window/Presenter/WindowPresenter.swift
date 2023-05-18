@@ -20,7 +20,6 @@ class WindowPresenter {
 
 extension WindowPresenter: WindowPresentation {
     func initialized() {
-        
         self.router.routTo(kind: .login)
     }
 }

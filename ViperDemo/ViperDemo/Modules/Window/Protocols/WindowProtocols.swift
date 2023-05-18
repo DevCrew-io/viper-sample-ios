@@ -7,13 +7,11 @@
 
 import Foundation
 
-// MARK: - PRESENTER -> VIEW
-
 // MARK: - VIEW -> PRESENTER
 protocol WindowPresentation {
     func initialized()
 }
-
+// MARK: - PRESENTER -> VIEW
 
 // MARK: - PRESENTER -> INTERACTOR
 

@@ -17,11 +17,14 @@ class LoginRouter {
 
 extension LoginRouter: LoginRouting {
     func showSignUp() {
-        
+        let vc = SignUpVCBuilder.build()
+        self.viewController.present(vc, animated: true)
     }
     
     func showHome() {
-        
+        let vc = HomeViewBuilder.build()
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.window?.rootViewController = vc
     }
     
     

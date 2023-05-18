@@ -21,4 +21,10 @@ class LoginPresenter {
 
 extension LoginPresenter: LoginViewPresentation {
     
+    func showSignUp() {
+        self.loginRouter.showSignUp()
+    }
+    func showHomeView() {
+        self.loginRouter.showHome()
+    }
 }

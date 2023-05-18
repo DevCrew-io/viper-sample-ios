@@ -1,21 +1,20 @@
 //
-//  LoginViewProtocols.swift
+//  SignUpProtocols.swift
 //  ViperDemo
 //
 //  Created by Ghullam Abbas on 17/05/2023.
 //
 
-import Foundation
+import UIKit
 
 // MARK: - PRESENTER -> VIEW
-protocol LoginViewProtocol: AnyObject {
+protocol SignUpViewProtocol: AnyObject {
     
 }
 
 // MARK: - VIEW -> PRESENTER
-protocol LoginViewPresentation: AnyObject {
-    func showSignUp()
-    func showHomeView()
+protocol SignUpViewPresentation: AnyObject {
+    func dismissSignUpVC()
 }
 
 // MARK: - PRESENTER -> INTERACTOR
@@ -26,7 +25,7 @@ protocol LoginViewPresentation: AnyObject {
 
 // MARK: - PRESENTER -> ROUTER
 
-protocol LoginRouting {
-    func showSignUp()
+protocol SignUpRouting {
+    func dismissSignUp()
     func showHome()
 }

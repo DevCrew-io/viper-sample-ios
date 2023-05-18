@@ -9,12 +9,37 @@ import UIKit
 
 class HomeViewPresenter {
     weak var view:HomeViewProtocol?
-    private let router:HomeViewRouting
+    var router:HomeViewRouting?
+    var interactor:HomeViewInteractorInputProtocol?
     init(router: HomeViewRouting) {
         self.router = router
     }
 }
 
 extension HomeViewPresenter: HomeViewPresentation {
+    func showPostDetail(forPost article: Article) {
+        
+    }
+    
+   
+    func viewDidLoad() {
+        view?.showActivityIndicator()
+        interactor?.retriveList()
+    }
+    
+    
+}
+
+extension HomeViewPresenter:HomeViewInteractorOutputProtocol {
+    func didRetrievePosts(_ news: News) {
+        view?.hideActivityIndicator()
+        view?.showPosts(with: news)
+    }
+    
+    func onError() {
+        view?.hideActivityIndicator()
+        view?.showError()
+    }
+    
     
 }
