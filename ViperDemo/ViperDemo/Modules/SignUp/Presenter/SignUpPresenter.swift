@@ -9,7 +9,8 @@ import Foundation
 
 class SignUpPresenter {
     weak var view:SignUpViewProtocol?
-    private let router:SignUpRouting
+    var router: SignUpRouting?
+    var interactor: SignUpViewInteractorInPut?
     
     init(router: SignUpRouting) {
         
@@ -18,8 +19,14 @@ class SignUpPresenter {
 }
 
 extension SignUpPresenter: SignUpViewPresentation {
+    
+
     func dismissSignUpVC() {
-        self.router.dismissSignUp()
+        self.router?.dismissSignUp()
     }
+    
+}
+
+extension SignUpPresenter :SignUpViewInteractoOutPut {
     
 }

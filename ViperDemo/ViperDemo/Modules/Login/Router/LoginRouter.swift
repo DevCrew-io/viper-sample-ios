@@ -18,7 +18,7 @@ class LoginRouter {
 extension LoginRouter: LoginRouting {
     func showSignUp() {
         let vc = SignUpVCBuilder.build()
-        self.viewController.present(vc, animated: true)
+        self.viewController.navigationController?.pushViewController(vc, animated: true)
     }
     
     func showHome() {

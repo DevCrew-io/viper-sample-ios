@@ -98,12 +98,15 @@
                             <constraint firstItem="54S-Mq-57A" firstAttribute="trailing" secondItem="Fp5-9B-GmP" secondAttribute="trailing" constant="16" id="5oy-6m-oZe"/>
                             <constraint firstItem="hhw-8d-Vj5" firstAttribute="top" secondItem="CvL-ST-3HE" secondAttribute="bottom" constant="10" id="7BT-IS-ZoX"/>
                             <constraint firstItem="54S-Mq-57A" firstAttribute="bottom" secondItem="Fp5-9B-GmP" secondAttribute="bottom" constant="10" id="JuR-0Y-tGn"/>
+                            <constraint firstItem="GRJ-cE-xUh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CvL-ST-3HE" secondAttribute="trailing" constant="8" symbolic="YES" id="NbH-ve-Prp"/>
                             <constraint firstItem="CvL-ST-3HE" firstAttribute="leading" secondItem="54S-Mq-57A" secondAttribute="leading" constant="16" id="WtQ-wC-3zX"/>
                             <constraint firstItem="uFq-nx-Fyg" firstAttribute="leading" secondItem="54S-Mq-57A" secondAttribute="leading" constant="16" id="bBH-ph-pWO"/>
                             <constraint firstItem="uFq-nx-Fyg" firstAttribute="top" secondItem="hhw-8d-Vj5" secondAttribute="bottom" constant="10" id="bue-aV-d8g"/>
                             <constraint firstItem="54S-Mq-57A" firstAttribute="trailing" secondItem="hhw-8d-Vj5" secondAttribute="trailing" constant="16" id="cDx-Da-90H"/>
                             <constraint firstItem="Fp5-9B-GmP" firstAttribute="top" secondItem="NSM-yu-Rcg" secondAttribute="bottom" constant="10" id="dSO-As-cyV"/>
                             <constraint firstItem="CvL-ST-3HE" firstAttribute="top" secondItem="54S-Mq-57A" secondAttribute="top" id="ltC-kh-DV3"/>
+                            <constraint firstItem="hhw-8d-Vj5" firstAttribute="centerX" secondItem="HKa-7U-hI8" secondAttribute="centerX" id="lyQ-Gz-ewd"/>
+                            <constraint firstItem="54S-Mq-57A" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NSM-yu-Rcg" secondAttribute="trailing" symbolic="YES" id="qIB-93-rNA"/>
                             <constraint firstItem="NSM-yu-Rcg" firstAttribute="leading" secondItem="54S-Mq-57A" secondAttribute="leading" constant="16" id="sAh-ZP-skg"/>
                             <constraint firstItem="hhw-8d-Vj5" firstAttribute="leading" secondItem="54S-Mq-57A" secondAttribute="leading" constant="16" id="vPY-zd-LOG"/>
                             <constraint firstItem="NSM-yu-Rcg" firstAttribute="top" secondItem="uFq-nx-Fyg" secondAttribute="bottom" constant="8" id="x81-k7-JFQ"/>

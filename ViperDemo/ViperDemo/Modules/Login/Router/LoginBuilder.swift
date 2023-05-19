@@ -10,12 +10,12 @@ import UIKit
 class LoginBuilder {
     
    static func build() -> UIViewController {
-        let storyboard = Storyboard.login.instance
-        let loginVC = storyboard.instantiateViewController(identifier: "LoginVC") as! LoginVC
+        let loginVC =  LoginVC()
+       let navigation = UINavigationController(rootViewController: loginVC)
         let router = LoginRouter(viewController: loginVC)
         let presenter = LoginPresenter(loginRouter: router)
         loginVC.loginPresenter = presenter
         presenter.view = loginVC
-        return loginVC
+        return navigation
     }
 }

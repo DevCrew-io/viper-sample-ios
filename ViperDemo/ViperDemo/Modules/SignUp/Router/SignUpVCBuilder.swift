@@ -9,12 +9,11 @@ import UIKit
 
 class SignUpVCBuilder {
     static func build()->UIViewController {
-        let storyboard = Storyboard.login.instance
-        let signUpVC = storyboard.instantiateViewController(withIdentifier: "SignUpVC") as! SignUpVC
-        let router = SignUpRouter(viewController: signUpVC)
-        let presenter = SignUpPresenter(router: router)
-        presenter.view = signUpVC
-        signUpVC.presenter = presenter
-        return signUpVC
+        let view = SignUpVC()
+        let router = SignUpRouter(viewController: view)
+        let presenter:SignUpViewPresentation&SignUpViewInteractoOutPut = SignUpPresenter(router: router)
+        presenter.view = view
+        view.presenter = presenter
+        return view
     }
 }
