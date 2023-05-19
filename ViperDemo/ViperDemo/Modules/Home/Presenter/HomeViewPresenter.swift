@@ -18,7 +18,7 @@ class HomeViewPresenter {
 
 extension HomeViewPresenter: HomeViewPresentation {
     func showPostDetail(forPost article: Article) {
-        
+        router?.showPostDetail(forPost: article)
     }
     
    

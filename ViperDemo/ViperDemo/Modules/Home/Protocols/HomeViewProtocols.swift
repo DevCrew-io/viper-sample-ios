@@ -52,6 +52,6 @@ protocol HomeRemoteDataManagerOutputProtocol {
 
 // MARK: - PRESENTER -> ROUTER
 protocol HomeViewRouting {
-    
+    func showPostDetail(forPost article:Article)
 }
 

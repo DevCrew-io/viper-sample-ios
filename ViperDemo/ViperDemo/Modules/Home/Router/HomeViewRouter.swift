@@ -15,5 +15,12 @@ class HomeViewRouter {
 }
 
 extension HomeViewRouter : HomeViewRouting {
+    func showPostDetail(forPost article: Article) {
+        
+        let view = NewsDetailBuilder.build(with: article)
+        self.viewController.present(view, animated: true)
+        
+    }
+    
     
 }

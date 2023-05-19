@@ -65,12 +65,12 @@ class HomeVC: UIViewController,HomeViewProtocol {
     
     func showActivityIndicator() {
         //PKHUD.sharedHUD.contentView = PKHUDSuccessView()
-        PKHUD.sharedHUD.show()
+        HUD.show(.progress)
     }
     
     func hideActivityIndicator() {
         
-        PKHUD.sharedHUD.hide()
+        HUD.hide()
     }
     
 }
@@ -96,6 +96,7 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // presenter.didSelectedNews(self.news[indexPath.row])
+        
+         presenter?.showPostDetail(forPost: self.news[indexPath.row])
     }
 }
