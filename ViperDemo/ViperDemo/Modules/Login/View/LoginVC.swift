@@ -100,7 +100,7 @@ class LoginVC: UIViewController {
     // MARK: - IBAction
     @objc func loginButtonTabed() {
         guard let email = emailField.text, let password = passwordField.text,
-              !email.isEmpty, !password.isEmpty, password.count >= 6 else {
+              !email.isEmpty, !password.isEmpty else {
                   alertUserLoginError()
                   return
               }
@@ -115,9 +115,6 @@ class LoginVC: UIViewController {
     }
     @objc func didTabSignUp() {
         self.presenter?.showSignUp()
-//        let vc = RegisteredViewController()
-//        vc.title = "Sign up"
-//        navigationController?.pushViewController(vc, animated: true)
     }
     
 }

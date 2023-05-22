@@ -10,27 +10,29 @@ import UIKit
 // MARK: - PRESENTER -> VIEW
 protocol SignUpViewProtocol: AnyObject {
     var presenter:SignUpViewPresentation? {get set}
+    func onSignUpFailure(error:String)
+    func showActivityIndicator()
+    func hideActivityIndicator()
 }
 
 // MARK: - VIEW -> PRESENTER
 protocol SignUpViewPresentation: AnyObject {
     var view: SignUpViewProtocol? {get set}
     var router:SignUpRouting? {get set}
-    var interactor:SignUpViewInteractorInPut? {get set}
+    var interactor:SignUpViewInteractor? {get set}
     func dismissSignUpVC()
+    func signUp(email:String,password:String)
+    func onSuccess()
+    func onFailure(errorMessage:String)
+    
 }
 
 // MARK: - PRESENTER -> INTERACTOR
-protocol SignUpViewInteractorInPut {
-    var presenter:SignUpViewInteractoOutPut? {get set}
+protocol SignUpViewInteractor {
+    var presenter:SignUpViewPresentation? {get set}
+    func didCreateUser(email:String,password:String)
     
 }
-
-// MARK: -  INTERACTOR -> PRESENTER
-protocol SignUpViewInteractoOutPut {
-    
-}
-
 
 // MARK: - PRESENTER -> ROUTER
 

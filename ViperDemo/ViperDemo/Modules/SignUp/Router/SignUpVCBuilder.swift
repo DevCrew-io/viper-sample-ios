@@ -11,9 +11,12 @@ class SignUpVCBuilder {
     static func build()->UIViewController {
         let view = SignUpVC()
         let router = SignUpRouter(viewController: view)
-        let presenter:SignUpViewPresentation&SignUpViewInteractoOutPut = SignUpPresenter(router: router)
+        let presenter = SignUpPresenter(router: router)
+        let interactor = SignupInteractor()
         presenter.view = view
         view.presenter = presenter
+        presenter.interactor = interactor
+        interactor.presenter = presenter
         return view
     }
 }

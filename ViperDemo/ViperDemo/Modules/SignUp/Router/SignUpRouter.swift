@@ -21,7 +21,9 @@ extension SignUpRouter:SignUpRouting {
     }
     
     func showHome() {
-        
+        let vc = HomeViewBuilder.build()
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.window?.rootViewController = vc
     }
     
     
