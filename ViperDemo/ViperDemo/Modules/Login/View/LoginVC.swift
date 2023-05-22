@@ -7,8 +7,10 @@
 
 import UIKit
 import Firebase
+import PKHUD
 
 class LoginVC: UIViewController {
+    
     // MARK: - UIControlls
     private let scrollView :UIScrollView = {
         let scrollView = UIScrollView()
@@ -63,7 +65,7 @@ class LoginVC: UIViewController {
     }()
    
     // MARK: - Properties
-    var loginPresenter:LoginViewPresentation!
+    var presenter: LoginViewPresentation?
     
     
     // MARK: - LifeCycle
@@ -102,52 +104,17 @@ class LoginVC: UIViewController {
                   alertUserLoginError()
                   return
               }
-        // Login with Firebase
-        
-//        spinner.show(in: view)
-//        FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password, completion: { [weak self] authResult, error in
-//
-//            guard let strongSelf = self else {
-//                return
-//            }
-//            DispatchQueue.main.async {
-//                strongSelf.spinner.dismiss()
-//            }
-//            guard   error == nil else {
-//                print("Failed to login user with email:\(email)")
-//                return
-//            }
-//            let safeEmail = DatabaseManager.getSafeEmail(emailAddress: email)
-//            DatabaseManager.shared.getData(with: safeEmail, completion: {  result in
-//                switch result {
-//                case .success(let data):
-//                    print("user information:\(data)")
-//                    guard let userData = data as? [String:Any],
-//                    let first_name = userData["first_name"] as? String,
-//                    let last_name = userData["last_name"] as? String else {
-//                        return
-//                    }
-//
-//                    UserDefaults.standard.setValue("\(first_name) \(last_name)", forKey: "name")
-//                    NotificationCenter.default.post(name: .didLoginNotification, object: nil)
-//                case.failure(let error):
-//                    print("failed to get user name with error:\(error)")
-//                }
-//
-//            })
-//            UserDefaults.standard.setValue(email, forKey: "email")
-//            strongSelf.navigationController?.dismiss(animated: true)
-//        })
+        self.presenter?.login(with: email, password: password)
+
     }
    
-    
-    func alertUserLoginError() {
-        let alert = UIAlertController(title: "Oops", message: "Please enter all information to login...", preferredStyle: .alert)
+    func alertUserLoginError(message:String = "Please enter all information to login...") {
+        let alert = UIAlertController(title: "Oops", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler:nil))
         self.present(alert, animated: true)
     }
     @objc func didTabSignUp() {
-        loginPresenter.showSignUp()
+        self.presenter?.showSignUp()
 //        let vc = RegisteredViewController()
 //        vc.title = "Sign up"
 //        navigationController?.pushViewController(vc, animated: true)
@@ -170,5 +137,13 @@ extension LoginVC:UITextFieldDelegate {
 
 // MARK: - LoginView Protocol Implementation
 extension LoginVC: LoginViewProtocol {
-    
+    func onLoginFailure(errorMessage:String) {
+        self.alertUserLoginError(message: errorMessage)
+    }
+    func showActivityIndicator() {
+        HUD.show(.progress)
+    }
+    func hideActivityIndicator() {
+        HUD.hide()
+    }
 }

@@ -50,6 +50,8 @@
 		A89C8F542A1649130075A095 /* NewsDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89C8F532A1649130075A095 /* NewsDetailProtocols.swift */; };
 		A89C8F562A164A5E0075A095 /* NewsDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89C8F552A164A5E0075A095 /* NewsDetailPresenter.swift */; };
 		A89C8F582A164A770075A095 /* NewsDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89C8F572A164A770075A095 /* NewsDetailInteractor.swift */; };
+		A8A9727F2A1B2E01006861D0 /* LoginViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A9727E2A1B2E01006861D0 /* LoginViewInteractor.swift */; };
+		A8A972812A1B32F1006861D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8A972802A1B32F1006861D0 /* GoogleService-Info.plist */; };
 		A8E5F68F2A13852E005BB407 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F68E2A13852E005BB407 /* AppDelegate.swift */; };
 		A8E5F6932A13852E005BB407 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F6922A13852E005BB407 /* ViewController.swift */; };
 		A8E5F6962A13852E005BB407 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E5F6942A13852E005BB407 /* Main.storyboard */; };
@@ -114,6 +116,8 @@
 		A89C8F532A1649130075A095 /* NewsDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailProtocols.swift; sourceTree = "<group>"; };
 		A89C8F552A164A5E0075A095 /* NewsDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailPresenter.swift; sourceTree = "<group>"; };
 		A89C8F572A164A770075A095 /* NewsDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailInteractor.swift; sourceTree = "<group>"; };
+		A8A9727E2A1B2E01006861D0 /* LoginViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewInteractor.swift; sourceTree = "<group>"; };
+		A8A972802A1B32F1006861D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A8E5F68B2A13852E005BB407 /* ViperDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8E5F68E2A13852E005BB407 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8E5F6922A13852E005BB407 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -530,6 +534,7 @@
 			children = (
 				A8E5F6992A138530005BB407 /* LaunchScreen.storyboard */,
 				A8E5F69C2A138530005BB407 /* Info.plist */,
+				A8A972802A1B32F1006861D0 /* GoogleService-Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -553,6 +558,7 @@
 		A8E5F6C32A139F49005BB407 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				A8A9727E2A1B2E01006861D0 /* LoginViewInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -727,6 +733,7 @@
 			files = (
 				A8E5F69B2A138530005BB407 /* LaunchScreen.storyboard in Resources */,
 				A8E5F6982A138530005BB407 /* Assets.xcassets in Resources */,
+				A8A972812A1B32F1006861D0 /* GoogleService-Info.plist in Resources */,
 				A8E5F6962A13852E005BB407 /* Main.storyboard in Resources */,
 				A89C8F422A163B690075A095 /* NewsTableViewCell.xib in Resources */,
 			);
@@ -756,6 +763,7 @@
 				A89C8F582A164A770075A095 /* NewsDetailInteractor.swift in Sources */,
 				A881C7E82A14B9D300641C20 /* LoginViewProtocols.swift in Sources */,
 				A881C7F62A14D2B500641C20 /* HomeVC.swift in Sources */,
+				A8A9727F2A1B2E01006861D0 /* LoginViewInteractor.swift in Sources */,
 				A881C8052A15011300641C20 /* SignUpRouter.swift in Sources */,
 				A80712722A175CAD003F6CB6 /* UIView.swift in Sources */,
 				A881C7D72A149BD200641C20 /* LoginBuilder.swift in Sources */,

@@ -9,13 +9,16 @@ import UIKit
 
 class LoginBuilder {
     
-   static func build() -> UIViewController {
+    static func build() -> UIViewController {
         let loginVC =  LoginVC()
-       let navigation = UINavigationController(rootViewController: loginVC)
+        let navigation = UINavigationController(rootViewController: loginVC)
         let router = LoginRouter(viewController: loginVC)
         let presenter = LoginPresenter(loginRouter: router)
-        loginVC.loginPresenter = presenter
+        let interactor = LoginViewInteractor()
+        loginVC.presenter = presenter
         presenter.view = loginVC
+        presenter.interactor = interactor
+        interactor.presenter = presenter
         return navigation
     }
 }
