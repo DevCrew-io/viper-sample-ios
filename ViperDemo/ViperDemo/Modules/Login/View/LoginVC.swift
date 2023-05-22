@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 import PKHUD
+import KeyChainManager
 
 class LoginVC: UIViewController {
     
@@ -104,6 +105,10 @@ class LoginVC: UIViewController {
                   alertUserLoginError()
                   return
               }
+        if  (KeychainManager.shared.saveEmail(email: email)) {
+            
+            print("save successfully")
+        }
         self.presenter?.login(with: email, password: password)
 
     }

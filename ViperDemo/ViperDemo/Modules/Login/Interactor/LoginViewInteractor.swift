@@ -15,7 +15,7 @@ class LoginViewInteractor: LoginViewInteractorProtocol {
                 guard let self = self else { return}
                 
                 if error != nil {
-                    self.presenter?.loginFailure(errorMessage: error?.localizedDescription ?? "Some thing went wrong.")
+                    self.presenter?.loginFailure(errorMessage: error?.localizedDescription ?? "Something went wrong.")
                 } else {
                     self.presenter?.loginSuccess()
                 }

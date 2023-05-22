@@ -73,6 +73,15 @@
       }
     },
     {
+      "identity" : "keychainmanager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/abbasjoyia99/KeyChainManager.git",
+      "state" : {
+        "revision" : "c1ea1bbfa962866f0f61547ea4d669d1980fdc07",
+        "version" : "1.0.0"
+      }
+    },
+    {
       "identity" : "kingfisher",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/onevcat/Kingfisher.git",

@@ -53,6 +53,7 @@
 		A8A9727F2A1B2E01006861D0 /* LoginViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A9727E2A1B2E01006861D0 /* LoginViewInteractor.swift */; };
 		A8A972812A1B32F1006861D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8A972802A1B32F1006861D0 /* GoogleService-Info.plist */; };
 		A8A972852A1B39B2006861D0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A972842A1B39B2006861D0 /* User.swift */; };
+		A8A972882A1B9291006861D0 /* KeyChainManager in Frameworks */ = {isa = PBXBuildFile; productRef = A8A972872A1B9291006861D0 /* KeyChainManager */; };
 		A8E5F68F2A13852E005BB407 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F68E2A13852E005BB407 /* AppDelegate.swift */; };
 		A8E5F6932A13852E005BB407 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5F6922A13852E005BB407 /* ViewController.swift */; };
 		A8E5F6962A13852E005BB407 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E5F6942A13852E005BB407 /* Main.storyboard */; };
@@ -145,6 +146,7 @@
 				A89C8F342A15ECA70075A095 /* PKHUD in Frameworks */,
 				A807126F2A175920003F6CB6 /* FirebaseStorage in Frameworks */,
 				A80712692A175920003F6CB6 /* FirebaseAuth in Frameworks */,
+				A8A972882A1B9291006861D0 /* KeyChainManager in Frameworks */,
 				A807126D2A175920003F6CB6 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -639,6 +641,7 @@
 				A807126A2A175920003F6CB6 /* FirebaseDatabase */,
 				A807126C2A175920003F6CB6 /* FirebaseFirestore */,
 				A807126E2A175920003F6CB6 /* FirebaseStorage */,
+				A8A972872A1B9291006861D0 /* KeyChainManager */,
 			);
 			productName = ViperDemo;
 			productReference = A8E5F68B2A13852E005BB407 /* ViperDemo.app */;
@@ -717,6 +720,7 @@
 				A89C8F322A15ECA70075A095 /* XCRemoteSwiftPackageReference "PKHUD" */,
 				A89C8F352A15ECE30075A095 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				A80712672A175920003F6CB6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				A8A972862A1B9291006861D0 /* XCRemoteSwiftPackageReference "KeyChainManager" */,
 			);
 			productRefGroup = A8E5F68C2A13852E005BB407 /* Products */;
 			projectDirPath = "";
@@ -1171,6 +1175,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		A8A972862A1B9291006861D0 /* XCRemoteSwiftPackageReference "KeyChainManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/abbasjoyia99/KeyChainManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1208,6 +1220,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A89C8F352A15ECE30075A095 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		A8A972872A1B9291006861D0 /* KeyChainManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8A972862A1B9291006861D0 /* XCRemoteSwiftPackageReference "KeyChainManager" */;
+			productName = KeyChainManager;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
