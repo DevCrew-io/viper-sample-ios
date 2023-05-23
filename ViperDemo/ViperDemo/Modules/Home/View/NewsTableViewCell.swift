@@ -23,7 +23,7 @@ class NewsTableViewCell: UITableViewCell {
         imageNews.kf.indicatorType = .activity
         print(news.urlToImage ?? "")
         imageNews.kf.setImage(
-            with: URL(string: news.urlToImage ?? "")
+            with: URL(string: news.urlToImage ?? ""),placeholder: UIImage(named: "news")
         )
     }
     

@@ -51,7 +51,7 @@ extension NewsDetailVC: NewsDetailView {
         headerImage.kf.indicatorType = .activity
         print(article.urlToImage ?? "")
         headerImage.kf.setImage(
-            with: URL(string: article.urlToImage ?? "")
+            with: URL(string: article.urlToImage ?? ""),placeholder: UIImage(named: "news")
         )
     }
 }
