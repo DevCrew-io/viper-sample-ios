@@ -30,7 +30,7 @@ extension SignUpPresenter: SignUpViewPresentation {
     }
     func onSuccess() {
         view?.hideActivityIndicator()
-        self.router?.showHome()
+        self.router?.showNewsView()
     }
     func dismissSignUpVC() {
         self.router?.dismissSignUp()

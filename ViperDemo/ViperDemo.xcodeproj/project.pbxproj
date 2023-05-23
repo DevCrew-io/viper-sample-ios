@@ -23,12 +23,12 @@
 		A881C7DB2A149FB300641C20 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881C7DA2A149FB300641C20 /* Storyboard.swift */; };
 		A881C7E82A14B9D300641C20 /* LoginViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881C7E72A14B9D300641C20 /* LoginViewProtocols.swift */; };
 		A881C7EA2A14BC8B00641C20 /* WindowProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881C7E92A14BC8B00641C20 /* WindowProtocols.swift */; };
-		A881C7EC2A14BDB200641C20 /* HomeViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881C7EB2A14BDB200641C20 /* HomeViewProtocols.swift */; };
-		A881C7EE2A14BDEB00641C20 /* HomeViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881C7ED2A14BDEB00641C20 /* HomeViewRouter.swift */; };
-		A881C7F02A14BDFB00641C20 /* HomeViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881C7EF2A14BDFB00641C20 /* HomeViewBuilder.swift */; };
-		A881C7F22A14BE1E00641C20 /* HomeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881C7F12A14BE1E00641C20 /* HomeViewPresenter.swift */; };
-		A881C7F42A14BE2E00641C20 /* HomeViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881C7F32A14BE2E00641C20 /* HomeViewInteractor.swift */; };
-		A881C7F62A14D2B500641C20 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881C7F52A14D2B500641C20 /* HomeVC.swift */; };
+		A881C7EC2A14BDB200641C20 /* NewsViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881C7EB2A14BDB200641C20 /* NewsViewProtocols.swift */; };
+		A881C7EE2A14BDEB00641C20 /* NewsViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881C7ED2A14BDEB00641C20 /* NewsViewRouter.swift */; };
+		A881C7F02A14BDFB00641C20 /* NewsViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881C7EF2A14BDFB00641C20 /* NewsViewBuilder.swift */; };
+		A881C7F22A14BE1E00641C20 /* NewsViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881C7F12A14BE1E00641C20 /* NewsViewPresenter.swift */; };
+		A881C7F42A14BE2E00641C20 /* NewsViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881C7F32A14BE2E00641C20 /* NewsViewInteractor.swift */; };
+		A881C7F62A14D2B500641C20 /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881C7F52A14D2B500641C20 /* NewsVC.swift */; };
 		A881C7FF2A1500DB00641C20 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881C7FE2A1500DB00641C20 /* SignUpVC.swift */; };
 		A881C8012A1500F200641C20 /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881C8002A1500F200641C20 /* SignUpInteractor.swift */; };
 		A881C8032A15010200641C20 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881C8022A15010200641C20 /* SignUpPresenter.swift */; };
@@ -94,12 +94,12 @@
 		A881C7DA2A149FB300641C20 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		A881C7E72A14B9D300641C20 /* LoginViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewProtocols.swift; sourceTree = "<group>"; };
 		A881C7E92A14BC8B00641C20 /* WindowProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowProtocols.swift; sourceTree = "<group>"; };
-		A881C7EB2A14BDB200641C20 /* HomeViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewProtocols.swift; sourceTree = "<group>"; };
-		A881C7ED2A14BDEB00641C20 /* HomeViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRouter.swift; sourceTree = "<group>"; };
-		A881C7EF2A14BDFB00641C20 /* HomeViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewBuilder.swift; sourceTree = "<group>"; };
-		A881C7F12A14BE1E00641C20 /* HomeViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPresenter.swift; sourceTree = "<group>"; };
-		A881C7F32A14BE2E00641C20 /* HomeViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewInteractor.swift; sourceTree = "<group>"; };
-		A881C7F52A14D2B500641C20 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		A881C7EB2A14BDB200641C20 /* NewsViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewProtocols.swift; sourceTree = "<group>"; };
+		A881C7ED2A14BDEB00641C20 /* NewsViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewRouter.swift; sourceTree = "<group>"; };
+		A881C7EF2A14BDFB00641C20 /* NewsViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewBuilder.swift; sourceTree = "<group>"; };
+		A881C7F12A14BE1E00641C20 /* NewsViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewPresenter.swift; sourceTree = "<group>"; };
+		A881C7F32A14BE2E00641C20 /* NewsViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewInteractor.swift; sourceTree = "<group>"; };
+		A881C7F52A14D2B500641C20 /* NewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
 		A881C7FE2A1500DB00641C20 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		A881C8002A1500F200641C20 /* SignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
 		A881C8022A15010200641C20 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
@@ -247,7 +247,7 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		A881C7DE2A14B58000641C20 /* Home */ = {
+		A881C7DE2A14B58000641C20 /* News */ = {
 			isa = PBXGroup;
 			children = (
 				A89C8F3C2A15F8DF0075A095 /* DataManager */,
@@ -258,7 +258,7 @@
 				A881C7E02A14B59200641C20 /* Interactor */,
 				A881C7DF2A14B58B00641C20 /* View */,
 			);
-			path = Home;
+			path = News;
 			sourceTree = "<group>";
 		};
 		A881C7DF2A14B58B00641C20 /* View */ = {
@@ -267,7 +267,7 @@
 				A89C8F3F2A163B690075A095 /* NewsTableViewCell.swift */,
 				A89C8F402A163B690075A095 /* NewsTableViewCell.xib */,
 				A8E5F6922A13852E005BB407 /* ViewController.swift */,
-				A881C7F52A14D2B500641C20 /* HomeVC.swift */,
+				A881C7F52A14D2B500641C20 /* NewsVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -275,7 +275,7 @@
 		A881C7E02A14B59200641C20 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				A881C7F32A14BE2E00641C20 /* HomeViewInteractor.swift */,
+				A881C7F32A14BE2E00641C20 /* NewsViewInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -283,7 +283,7 @@
 		A881C7E12A14B5CE00641C20 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				A881C7F12A14BE1E00641C20 /* HomeViewPresenter.swift */,
+				A881C7F12A14BE1E00641C20 /* NewsViewPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -291,8 +291,8 @@
 		A881C7E22A14B5DD00641C20 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				A881C7ED2A14BDEB00641C20 /* HomeViewRouter.swift */,
-				A881C7EF2A14BDFB00641C20 /* HomeViewBuilder.swift */,
+				A881C7ED2A14BDEB00641C20 /* NewsViewRouter.swift */,
+				A881C7EF2A14BDFB00641C20 /* NewsViewBuilder.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -308,7 +308,7 @@
 		A881C7E42A14B96B00641C20 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				A881C7EB2A14BDB200641C20 /* HomeViewProtocols.swift */,
+				A881C7EB2A14BDB200641C20 /* NewsViewProtocols.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -608,11 +608,11 @@
 		A8E5F6C82A139FAF005BB407 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				A89C8F462A16478C0075A095 /* NewsDetail */,
-				A881C7F72A15007C00641C20 /* SignUp */,
-				A881C7DE2A14B58000641C20 /* Home */,
 				A881C7C22A14940D00641C20 /* Window */,
 				A8E5F6C72A139F88005BB407 /* Login */,
+				A881C7F72A15007C00641C20 /* SignUp */,
+				A881C7DE2A14B58000641C20 /* News */,
+				A89C8F462A16478C0075A095 /* NewsDetail */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -769,7 +769,7 @@
 			files = (
 				A89C8F582A164A770075A095 /* NewsDetailInteractor.swift in Sources */,
 				A881C7E82A14B9D300641C20 /* LoginViewProtocols.swift in Sources */,
-				A881C7F62A14D2B500641C20 /* HomeVC.swift in Sources */,
+				A881C7F62A14D2B500641C20 /* NewsVC.swift in Sources */,
 				A8A9727F2A1B2E01006861D0 /* LoginViewInteractor.swift in Sources */,
 				A881C8052A15011300641C20 /* SignUpRouter.swift in Sources */,
 				A80712722A175CAD003F6CB6 /* UIView.swift in Sources */,
@@ -781,8 +781,8 @@
 				A8E5F68F2A13852E005BB407 /* AppDelegate.swift in Sources */,
 				A881C8092A15038B00641C20 /* SignUpVCBuilder.swift in Sources */,
 				A89C8F4F2A1648170075A095 /* NewsDetailBuilder.swift in Sources */,
-				A881C7F22A14BE1E00641C20 /* HomeViewPresenter.swift in Sources */,
-				A881C7EE2A14BDEB00641C20 /* HomeViewRouter.swift in Sources */,
+				A881C7F22A14BE1E00641C20 /* NewsViewPresenter.swift in Sources */,
+				A881C7EE2A14BDEB00641C20 /* NewsViewRouter.swift in Sources */,
 				A881C7D12A149B9300641C20 /* LoginVC.swift in Sources */,
 				A89C8F4D2A1647DE0075A095 /* NewsDetailRouter.swift in Sources */,
 				A881C7FF2A1500DB00641C20 /* SignUpVC.swift in Sources */,
@@ -790,15 +790,15 @@
 				A881C7D52A149BBD00641C20 /* LoginPresenter.swift in Sources */,
 				A89C8F452A163C330075A095 /* DateHelper.swift in Sources */,
 				A881C7CB2A14955900641C20 /* WindowPresenter.swift in Sources */,
-				A881C7F02A14BDFB00641C20 /* HomeViewBuilder.swift in Sources */,
-				A881C7EC2A14BDB200641C20 /* HomeViewProtocols.swift in Sources */,
+				A881C7F02A14BDFB00641C20 /* NewsViewBuilder.swift in Sources */,
+				A881C7EC2A14BDB200641C20 /* NewsViewProtocols.swift in Sources */,
 				A881C7EA2A14BC8B00641C20 /* WindowProtocols.swift in Sources */,
 				A8A972852A1B39B2006861D0 /* User.swift in Sources */,
 				A881C7D32A149BAF00641C20 /* LoginRouter.swift in Sources */,
 				A89C8F3E2A15F8F30075A095 /* RemoteDataManager.swift in Sources */,
 				A89C8F3B2A15ED710075A095 /* EndPoints.swift in Sources */,
 				A881C7CF2A1498CC00641C20 /* WindowBuilder.swift in Sources */,
-				A881C7F42A14BE2E00641C20 /* HomeViewInteractor.swift in Sources */,
+				A881C7F42A14BE2E00641C20 /* NewsViewInteractor.swift in Sources */,
 				A881C8072A15012500641C20 /* SignUpProtocols.swift in Sources */,
 				A881C7CD2A1495C800641C20 /* WindowRouter.swift in Sources */,
 				A881C8012A1500F200641C20 /* SignUpInteractor.swift in Sources */,

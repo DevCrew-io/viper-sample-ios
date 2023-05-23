@@ -7,16 +7,16 @@
 
 import UIKit
 
-class HomeViewPresenter {
-    weak var view:HomeViewProtocol?
-    var router:HomeViewRouting?
-    var interactor:HomeViewInteractorInputProtocol?
-    init(router: HomeViewRouting) {
+class NewsViewPresenter {
+    weak var view:NewsViewProtocol?
+    var router:NewsViewRouting?
+    var interactor:NewsViewInteractorInputProtocol?
+    init(router: NewsViewRouting) {
         self.router = router
     }
 }
 
-extension HomeViewPresenter: HomeViewPresentation {
+extension NewsViewPresenter: NewsViewPresentation {
     func showPostDetail(forPost article: Article) {
         router?.showPostDetail(forPost: article)
     }
@@ -30,7 +30,7 @@ extension HomeViewPresenter: HomeViewPresentation {
     
 }
 
-extension HomeViewPresenter:HomeViewInteractorOutputProtocol {
+extension NewsViewPresenter:NewsViewInteractorOutputProtocol {
     func didRetrievePosts(_ news: News) {
         view?.hideActivityIndicator()
         view?.showPosts(with: news)

@@ -8,9 +8,9 @@
 import Foundation
 import Alamofire
 
-class RemoteDataManager:HomeRemoteDataManagerInputProtocol {
+class RemoteDataManager:NewsRemoteDataManagerInputProtocol {
     
-    var remoteRequestHandler: HomeRemoteDataManagerOutputProtocol?
+    var remoteRequestHandler: NewsRemoteDataManagerOutputProtocol?
     
     func retriveList() {
         

@@ -38,5 +38,5 @@ protocol LoginViewInteractorProtocol {
 
 protocol LoginRouting {
     func showSignUp()
-    func showHome()
+    func showNewsView()
 }

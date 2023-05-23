@@ -7,20 +7,20 @@
 
 import UIKit
 
-class HomeViewBuilder {
+class NewsViewBuilder {
     static func build()-> UIViewController {
         let storyboard = Storyboard.main.instance
-        let view = storyboard.instantiateViewController(identifier: "HomeVC") as! HomeVC
-        let router = HomeViewRouter(viewController: view)
-        let presenter: HomeViewPresentation & HomeViewInteractorOutputProtocol = HomeViewPresenter(router: router)
+        let view = storyboard.instantiateViewController(identifier: "NewsVC") as! NewsVC
+        let router = NewsViewRouter(viewController: view)
+        let presenter: NewsViewPresentation & NewsViewInteractorOutputProtocol = NewsViewPresenter(router: router)
         //HomeViewPresenter(router: router)
         view.presenter = presenter
         presenter.view = view
         
        
-        var interactor: HomeViewInteractorInputProtocol & HomeRemoteDataManagerOutputProtocol = HomeVCInteractor()
+        var interactor: NewsViewInteractorInputProtocol & NewsRemoteDataManagerOutputProtocol = NewsViewInteractor()
        
-        var remoteDataManager: HomeRemoteDataManagerInputProtocol = RemoteDataManager()
+        var remoteDataManager: NewsRemoteDataManagerInputProtocol = RemoteDataManager()
         
         
         view.presenter = presenter

@@ -8,8 +8,8 @@
 import Foundation
 
 // MARK: - PRESENTER -> VIEW
-protocol HomeViewProtocol:AnyObject {
-    var presenter:HomeViewPresentation? {get set}
+protocol NewsViewProtocol:AnyObject {
+    var presenter:NewsViewPresentation? {get set}
     func showPosts(with news:News)
     func showError()
     func showActivityIndicator()
@@ -17,41 +17,41 @@ protocol HomeViewProtocol:AnyObject {
 }
 
 // MARK: - VIEW -> PRESENTER
-protocol HomeViewPresentation:AnyObject {
-    var view:HomeViewProtocol? {get set}
-    var interactor:HomeViewInteractorInputProtocol? {get set}
-    var router:HomeViewRouting? {get set}
+protocol NewsViewPresentation:AnyObject {
+    var view:NewsViewProtocol? {get set}
+    var interactor:NewsViewInteractorInputProtocol? {get set}
+    var router:NewsViewRouting? {get set}
     func viewDidLoad()
     func showPostDetail(forPost article:Article)
 }
 
 // MARK: - PRESENTER -> INTERACTOR
-protocol HomeViewInteractorInputProtocol {
-    var presenter: HomeViewInteractorOutputProtocol? { get set }
-    var remoteDatamanager: HomeRemoteDataManagerInputProtocol? { get set }
+protocol NewsViewInteractorInputProtocol {
+    var presenter: NewsViewInteractorOutputProtocol? { get set }
+    var remoteDatamanager: NewsRemoteDataManagerInputProtocol? { get set }
     // PRESENTER -> INTERACTOR
     func retriveList()
 }
-protocol HomeViewInteractorOutputProtocol:AnyObject {
+protocol NewsViewInteractorOutputProtocol:AnyObject {
     // INTERACTOR -> PRESENTER
     func didRetrievePosts(_ news: News)
     func onError()
 }
 
 // MARK: -  INTERACTOR -> PRESENTER
-protocol HomeRemoteDataManagerInputProtocol {
-    var remoteRequestHandler:HomeRemoteDataManagerOutputProtocol? { get set }
+protocol NewsRemoteDataManagerInputProtocol {
+    var remoteRequestHandler:NewsRemoteDataManagerOutputProtocol? { get set }
     // INTERACTOR -> REMOTEDATAMANAGER
     func retriveList()
 }
-protocol HomeRemoteDataManagerOutputProtocol {
+protocol NewsRemoteDataManagerOutputProtocol {
     // REMOTEDATAMANAGER -> INTERACTOR
     func onRetriveList(with news:News)
     func onError()
 }
 
 // MARK: - PRESENTER -> ROUTER
-protocol HomeViewRouting {
+protocol NewsViewRouting {
     func showPostDetail(forPost article:Article)
 }
 

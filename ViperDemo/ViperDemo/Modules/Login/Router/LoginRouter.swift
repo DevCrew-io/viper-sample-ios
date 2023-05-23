@@ -21,8 +21,8 @@ extension LoginRouter: LoginRouting {
         self.viewController.navigationController?.pushViewController(vc, animated: true)
     }
     
-    func showHome() {
-        let vc = HomeViewBuilder.build()
+    func showNewsView() {
+        let vc = NewsViewBuilder.build()
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.window?.rootViewController = vc
     }

@@ -38,5 +38,5 @@ protocol SignUpViewInteractor {
 
 protocol SignUpRouting {
     func dismissSignUp()
-    func showHome()
+    func showNewsView()
 }

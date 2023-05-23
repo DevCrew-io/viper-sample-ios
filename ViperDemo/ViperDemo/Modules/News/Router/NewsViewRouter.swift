@@ -7,14 +7,14 @@
 
 import UIKit
 
-class HomeViewRouter {
+class NewsViewRouter {
     private let viewController:UIViewController
     init(viewController: UIViewController) {
         self.viewController = viewController
     }
 }
 
-extension HomeViewRouter : HomeViewRouting {
+extension NewsViewRouter : NewsViewRouting {
     func showPostDetail(forPost article: Article) {
         
         let view = NewsDetailBuilder.build(with: article)

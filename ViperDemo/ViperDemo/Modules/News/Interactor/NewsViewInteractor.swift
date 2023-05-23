@@ -7,10 +7,10 @@
 
 import UIKit
 
-class HomeVCInteractor:HomeViewInteractorInputProtocol {
+class NewsViewInteractor:NewsViewInteractorInputProtocol {
     
-    weak var presenter: HomeViewInteractorOutputProtocol?
-    var remoteDatamanager: HomeRemoteDataManagerInputProtocol?
+    weak var presenter: NewsViewInteractorOutputProtocol?
+    var remoteDatamanager: NewsRemoteDataManagerInputProtocol?
     
     func retriveList() {
         
@@ -19,7 +19,7 @@ class HomeVCInteractor:HomeViewInteractorInputProtocol {
     
 }
 
-extension HomeVCInteractor:HomeRemoteDataManagerOutputProtocol {
+extension NewsViewInteractor:NewsRemoteDataManagerOutputProtocol {
     func onRetriveList(with news: News) {
         presenter?.didRetrievePosts(news)
     }
