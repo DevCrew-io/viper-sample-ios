@@ -3,12 +3,12 @@ A sample iOS application showcasing the VIPER (View-Interactor-Presenter-Entity-
 
 ![Simulator Screenshot - iPhone 14 Pro - 2023-05-24 at 12 30 39](https://github.com/DevCrew-io/viper-sample-ios/assets/133848606/c3b8197e-a5da-4c9b-b9de-92eb40ef34d8)
 
-**VIPER Presentation**
+### VIPER Presentation
 
 Welcome to the Viper Sample Project! Check out our [VIPER Presentation](https://docs.google.com/presentation/d/1CLkYtdmFPOunOoAtyynrFPWZEWtufwTKUiYKKdjTScI/edit?usp=sharing) for a  walkthrough of the architecture and features.
 
 
-**Table of Contents**
+### Table of Contents
 
 * Introduction
 * Features
@@ -17,11 +17,11 @@ Welcome to the Viper Sample Project! Check out our [VIPER Presentation](https://
 * Usage
 * Folder Structure
 
-**Introduction**
+### Introduction
 
 The Viper Sample Project showcases a simple iOS application implemented using the Viper architecture. It demonstrates the separation of concerns and the interaction between different components of the Viper pattern, such as the View, Presenter, Interactor, and Router.
 
-**Features**
+### Features
 
 This sample project includes the following features:
 
@@ -32,7 +32,7 @@ This sample project includes the following features:
 
 Feel free to explore and modify the code to suit your needs.
 
-**Requirements**
+### Requirements
 
 To run the Viper Sample Project, you need:
 
@@ -40,7 +40,7 @@ To run the Viper Sample Project, you need:
 * Swift 5.0 or later
 * iOS 11.0 or later
 
-**Installation**
+### Installation
 
 1. Clone the repository:
 
@@ -55,11 +55,11 @@ open ViperDemo.xcodeproj
 ```
 3. Build and run the project using the Xcode simulator or a connected device.
 
-**Usage**
+### Usage
 
 The Viper Sample Project provides a basic user interface for authentication, profile management, and todo list management. You can explore the different screens and interact with them to understand how the Viper components work together.
 
-**Folder Structure**
+### Folder Structure
 
 
 The folder structure of the project follows the Viper architecture pattern:
@@ -70,7 +70,7 @@ The folder structure of the project follows the Viper architecture pattern:
 * The Shared folder contains shared code, such as utility classes, extensions, and services, that can be used across multiple modules.
 
 
-**Dependencies**
+### Dependencies
 
 [Swift Package Manager](https://www.swift.org/package-manager/) is used as a dependency manager. List of dependencies:
 
@@ -80,6 +80,19 @@ The folder structure of the project follows the Viper architecture pattern:
 [Firebase](https://firebase.google.com/)-> Used for authentication.
 
 
+### Author
+[DevCrew I/O](https://devcrew.io/)
+
+### Connect with Us:
+
+
+### Show your Support
+
+Give a star if this project helped you.
+
+### Copyright & License
+
+Code copyright 2023 DevCrew I/O. Code released under the [MIT license](https://github.com/DevCrew-io/expandable-richtext/blob/main/LICENSE).
 
 
 
