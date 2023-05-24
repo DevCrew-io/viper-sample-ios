@@ -26,12 +26,14 @@ protocol LoginViewPresentation: AnyObject {
     func showHomeView()
     func loginSuccess()
     func loginFailure(errorMessage:String)
+    func viewDidLoad()
 }
 
 // MARK: - PRESENTER -> INTERACTOR
 protocol LoginViewInteractorProtocol {
     var presenter:LoginViewPresentation?{get set}
     func login(email:String,password:String)
+    func alreadyLogedIn()
 }
 
 // MARK: - PRESENTER -> ROUTER

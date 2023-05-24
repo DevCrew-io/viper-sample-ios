@@ -15,6 +15,8 @@ class LoginBuilder {
         let router = LoginRouter(viewController: loginVC)
         let presenter = LoginPresenter(loginRouter: router)
         let interactor = LoginViewInteractor()
+        let localStorage = LocalDataStorage()
+        interactor.localDataStorage = localStorage
         loginVC.presenter = presenter
         presenter.view = loginVC
         presenter.interactor = interactor

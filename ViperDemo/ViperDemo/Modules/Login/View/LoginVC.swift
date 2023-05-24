@@ -79,7 +79,7 @@ class LoginVC: UIViewController {
         emailField.delegate = self
         passwordField.delegate = self
         
-        
+        presenter?.viewDidLoad()
         // Add subviews
         self.view.addSubview(scrollView)
         scrollView.addSubview(logoImageView)
@@ -105,10 +105,6 @@ class LoginVC: UIViewController {
                   alertUserLoginError()
                   return
               }
-        if  (KeychainManager.shared.saveEmail(email: email)) {
-            
-            print("save successfully")
-        }
         self.presenter?.login(with: email, password: password)
 
     }

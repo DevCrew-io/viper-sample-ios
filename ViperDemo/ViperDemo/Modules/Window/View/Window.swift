@@ -8,7 +8,7 @@
 import UIKit
 
 class Window: UIWindow {
-    var presenter:WindowPresentation!
+    var presenter:WindowPresentation?
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -17,5 +17,9 @@ class Window: UIWindow {
         super.init(coder: coder)
     }
     
+    
+}
+
+extension Window:windowViewProtocol {
     
 }

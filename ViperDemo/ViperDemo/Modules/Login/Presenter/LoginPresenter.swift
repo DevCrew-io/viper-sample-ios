@@ -14,11 +14,15 @@ class LoginPresenter {
     
     init (loginRouter: LoginRouting) {
         self.loginRouter = loginRouter
+        
     }
 }
 
 extension LoginPresenter: LoginViewPresentation {
     
+    func viewDidLoad() {
+        self.interactor?.alreadyLogedIn()
+    }
     func loginSuccess() {
         view?.hideActivityIndicator()
         self.showHomeView()

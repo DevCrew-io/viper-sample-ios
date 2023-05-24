@@ -15,7 +15,11 @@ class WindowBuilder {
                                   submodules: (loginModule:LoginBuilder.build,homeModule:NewsViewBuilder.build
         ))
         let presenter = WindowPresenter(router: router)
+        let interactor = WindowInteractor()
         window.presenter = presenter
+        presenter.view = window
+        presenter.interactor = interactor
+        interactor.presenter = presenter
         return window
     }
 }

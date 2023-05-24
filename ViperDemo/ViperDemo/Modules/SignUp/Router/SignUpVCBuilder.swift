@@ -13,6 +13,8 @@ class SignUpVCBuilder {
         let router = SignUpRouter(viewController: view)
         let presenter = SignUpPresenter(router: router)
         let interactor = SignupInteractor()
+        let localStorage = LocalDataStorage()
+        interactor.localDataStorage = localStorage
         presenter.view = view
         view.presenter = presenter
         presenter.interactor = interactor

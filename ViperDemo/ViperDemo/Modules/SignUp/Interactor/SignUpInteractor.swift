@@ -6,9 +6,11 @@
 //
 
 import Firebase
+import KeyChainManager
 class SignupInteractor:SignUpViewInteractor {
     
    weak var presenter: SignUpViewPresentation?
+    var localDataStorage:LocalDataStorageInterface?
     
     func didCreateUser(email: String, password: String) {
         
@@ -30,7 +32,7 @@ class SignupInteractor:SignUpViewInteractor {
                 self.presenter?.onFailure(errorMessage: error?.localizedDescription ?? "Something went wrong")
                 return
             }
-            
+            localDataStorage?.storeUser(email: email)
             self.presenter?.onSuccess()
         }
     }
