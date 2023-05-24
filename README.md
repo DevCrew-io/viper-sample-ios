@@ -1,7 +1,7 @@
 # viper-sample-ios
 A sample iOS application showcasing the VIPER (View-Interactor-Presenter-Entity-Router) architecture pattern. This project serves as a starting point for building modular, scalable, and maintainable iOS applications using VIPER. 
 
-![Simulator Screenshot - iPhone 14 Pro - 2023-05-24 at 12 30 39](https://github.com/DevCrew-io/viper-sample-ios/assets/133848606/c3b8197e-a5da-4c9b-b9de-92eb40ef34d8)
+![Uploading Minimalist Family Three Photo Collage.png…]()
 
 ### VIPER Presentation
 
