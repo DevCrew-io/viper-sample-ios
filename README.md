@@ -82,10 +82,6 @@ The folder structure of the project follows the Viper architecture pattern:
 [Firebase](https://firebase.google.com/)-> Used for authentication.
 
 
-### Author
-[DevCrew I/O](https://devcrew.io/)
-
-
 ## Author
 
 [DevCrew.IO](https://devcrew.io/)
@@ -103,7 +99,7 @@ If you have any questions or comments about Nested Collection View, please feel 
 
 
 ## Contributing 
-Contributions, issues, and feature requests are welcome! See [Contributors](https://github.com/DevCrew-io/Nested-Collection-View/graphs/contributors) for details.
+Contributions, issues, and feature requests are welcome! See [Contributors](https://github.com/DevCrew-io/viper-sample-ios) for details.
 
 ### Show your Support
 
