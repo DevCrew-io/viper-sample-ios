@@ -3,9 +3,9 @@ A sample iOS application showcasing the VIPER (View-Interactor-Presenter-Entity-
 
 ![Simulator Screenshot - iPhone 14 Pro - 2023-05-24 at 12 30 39](https://github.com/DevCrew-io/viper-sample-ios/assets/133848606/c3b8197e-a5da-4c9b-b9de-92eb40ef34d8)
 
-### VIPER Presentation
+**VIPER Presentation**
 
-Welcome to the Viper Sample Project! Check out our [VIPER Presentation]([https://example.com](https://docs.google.com/presentation/d/1CLkYtdmFPOunOoAtyynrFPWZEWtufwTKUiYKKdjTScI/edit?usp=sharing)) for a  walkthrough of the architecture and features.
+Welcome to the Viper Sample Project! Check out our [VIPER Presentation](https://docs.google.com/presentation/d/1CLkYtdmFPOunOoAtyynrFPWZEWtufwTKUiYKKdjTScI/edit?usp=sharing) for a  walkthrough of the architecture and features.
 
 
 **Table of Contents**
