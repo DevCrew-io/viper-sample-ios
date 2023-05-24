@@ -7,11 +7,11 @@ Welcome to the Viper Sample Project! This project serves as a demonstration and 
 
 **Table of Contents**
 
-* Introduction\
-* Features\
-* Requirements\
-* Installation\
-* Usage\
+* Introduction
+* Features
+* Requirements
+* Installation
+* Usage
 * Folder Structure
 
 **Introduction**
@@ -22,9 +22,9 @@ The Viper Sample Project showcases a simple iOS application implemented using th
 
 This sample project includes the following features:
 
-* Sign in with firebase\
-* Sign up with firebase \
-* News list\
+* Sign in with firebase
+* Sign up with firebase 
+* News list
 * News detail
 
 Feel free to explore and modify the code to suit your needs.
@@ -33,8 +33,8 @@ Feel free to explore and modify the code to suit your needs.
 
 To run the Viper Sample Project, you need:
 
-* Xcode 11.0 or later\
-* Swift 5.0 or later\
+* Xcode 11.0 or later
+* Swift 5.0 or later
 * iOS 11.0 or later
 
 **Installation**
