@@ -10,7 +10,6 @@ import UIKit
 enum Storyboard {
     case login
     case main
-    
     var instance: UIStoryboard {
         switch self {
         case.login:
