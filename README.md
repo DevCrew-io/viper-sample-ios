@@ -67,7 +67,16 @@ The folder structure of the project follows the Viper architecture pattern:
 * The Shared folder contains shared code, such as utility classes, extensions, and services, that can be used across multiple modules.
 
 
-Feel free to add or modify modules and their components based on your project requirements.
+**Dependencies**
+
+[Swift Package Manager](https://www.swift.org/package-manager/) is used as a dependency manager. List of dependencies:
+
+[Alamofire](https://github.com/Alamofire/Alamofire) -> Networking library used for https request.
+[Kingfisher](https://github.com/onevcat/Kingfisher) -> A lightweight, pure-Swift library for downloading and caching images from the web
+[PKHUD](https://github.com/pkluz/PKHUD) -> A Swift based reimplementation of the Apple HUD (Volume, Ringer, Rotation,…)
+[Firebase](https://firebase.google.com/)-> Used for authentication.
+
+
 
 
 
