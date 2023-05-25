@@ -8,9 +8,9 @@
 import UIKit
 
 class NewsViewPresenter {
-    weak var view:NewsViewProtocol?
-    var router:NewsViewRouting?
-    var interactor:NewsViewInteractorInputProtocol?
+    weak var view: NewsViewProtocol?
+    var router: NewsViewRouting?
+    var interactor: NewsViewInteractorInputProtocol?
     init(router: NewsViewRouting) {
         self.router = router
     }

@@ -7,10 +7,10 @@
 
 import Firebase
 import KeyChainManager
-class SignupInteractor:SignUpViewInteractor {
+class SignupInteractor: SignUpViewInteractor {
     
    weak var presenter: SignUpViewPresentation?
-    var localDataStorage:LocalDataStorageInterface?
+    var localDataStorage: LocalDataStorageInterface?
     
     func didCreateUser(email: String, password: String) {
         

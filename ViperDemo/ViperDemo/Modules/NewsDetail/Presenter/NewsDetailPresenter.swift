@@ -12,7 +12,7 @@ class NewsDetailPresenter: NewsDetailPresentation {
    weak var view: NewsDetailView?
     var iteractor: NewsDetailInteractorInput?
     var router: NewsDetailRouting?
-    var article:Article!
+    var article: Article!
     
     func viewDidLoad() {
         print("Presenter called")

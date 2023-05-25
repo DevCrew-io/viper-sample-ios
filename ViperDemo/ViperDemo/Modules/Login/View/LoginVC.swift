@@ -13,11 +13,11 @@ import KeyChainManager
 class LoginVC: UIViewController {
     
     // MARK: - UIControlls
-    private let scrollView :UIScrollView = {
+    private let scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         return scrollView
     }()
-    private let logoImageView:UIImageView = {
+    private let logoImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "logo")
         imageView.tintColor = .link
@@ -54,7 +54,7 @@ class LoginVC: UIViewController {
         return field
     }()
     
-    private let loginButton:UIButton = {
+    private let loginButton: UIButton = {
         let button = UIButton()
         button.setTitle("Sign In", for: .normal)
         button.setTitleColor(.white, for: .normal)
@@ -109,7 +109,7 @@ class LoginVC: UIViewController {
 
     }
    
-    func alertUserLoginError(message:String = "Please enter all information to login...") {
+    func alertUserLoginError(message: String = "Please enter all information to login...") {
         let alert = UIAlertController(title: "Oops", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler:nil))
         self.present(alert, animated: true)
@@ -135,7 +135,7 @@ extension LoginVC:UITextFieldDelegate {
 
 // MARK: - LoginView Protocol Implementation
 extension LoginVC: LoginViewProtocol {
-    func onLoginFailure(errorMessage:String) {
+    func onLoginFailure(errorMessage: String) {
         self.alertUserLoginError(message: errorMessage)
     }
     func showActivityIndicator() {

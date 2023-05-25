@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-class RemoteDataManager:NewsRemoteDataManagerInputProtocol {
+class RemoteDataManager: NewsRemoteDataManagerInputProtocol {
     
     var remoteRequestHandler: NewsRemoteDataManagerOutputProtocol?
     

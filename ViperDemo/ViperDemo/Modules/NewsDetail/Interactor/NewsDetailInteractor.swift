@@ -7,7 +7,7 @@
 
 import Foundation
 
-class NewsDetailInteractor:NewsDetailInteractorInput {
+class NewsDetailInteractor: NewsDetailInteractorInput {
     var presenter: NewsDetailInteractorOutPut?
     
     

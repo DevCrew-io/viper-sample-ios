@@ -8,13 +8,13 @@
 import UIKit
 
 class NewsViewRouter {
-    private let viewController:UIViewController
+    private let viewController: UIViewController
     init(viewController: UIViewController) {
         self.viewController = viewController
     }
 }
 
-extension NewsViewRouter : NewsViewRouting {
+extension NewsViewRouter: NewsViewRouting {
     func showPostDetail(forPost article: Article) {
         
         let view = NewsDetailBuilder.build(with: article)

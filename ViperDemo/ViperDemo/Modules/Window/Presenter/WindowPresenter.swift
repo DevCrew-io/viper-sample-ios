@@ -12,7 +12,7 @@ class WindowPresenter {
     
    weak var view: windowViewProtocol?
     var interactor: WindowInteractorProtocol?
-    private let router:WindowRouter
+    private let router: WindowRouter
     
     init(router: WindowRouter) {
         self.router = router

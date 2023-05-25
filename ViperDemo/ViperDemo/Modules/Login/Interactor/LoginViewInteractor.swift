@@ -9,7 +9,7 @@ import KeyChainManager
 
 class LoginViewInteractor: LoginViewInteractorProtocol {
     weak var presenter: LoginViewPresentation?
-    var localDataStorage:LocalDataStorageInterface?
+    var localDataStorage: LocalDataStorageInterface?
     func alreadyLogedIn() {
         if (localDataStorage?.userAlreadyLogedIn(forKey: "email"))! { self.presenter?.loginSuccess()
         }

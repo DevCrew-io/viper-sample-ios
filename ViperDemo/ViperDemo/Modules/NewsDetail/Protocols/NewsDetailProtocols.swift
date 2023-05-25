@@ -8,16 +8,16 @@
 import Foundation
 
 // MARK: - PRESENTER -> VIEW
-protocol NewsDetailView :AnyObject{
-    var presenter:NewsDetailPresentation? {get set}
-    func populateUIWithData(_ article:Article)
+protocol NewsDetailView: AnyObject{
+    var presenter: NewsDetailPresentation? {get set}
+    func populateUIWithData(_ article: Article)
 }
 
 // MARK: - VIEW -> PRESENTER
 protocol NewsDetailPresentation {
-    var view:NewsDetailView? {get set}
-    var iteractor:NewsDetailInteractorInput? {get set}
-    var router:NewsDetailRouting? {get set}
+    var view: NewsDetailView? {get set}
+    var iteractor: NewsDetailInteractorInput? {get set}
+    var router: NewsDetailRouting? {get set}
     
     func viewDidLoad()
     func  dismissNewsDetailView()
@@ -25,7 +25,7 @@ protocol NewsDetailPresentation {
 }
 // MARK: - PRESENTER -> INTERACTOR
 protocol NewsDetailInteractorInput {
-    var presenter:NewsDetailInteractorOutPut? {get set}
+    var presenter: NewsDetailInteractorOutPut? {get set}
     // PRESENTER -> INTERACTOR
 }
 

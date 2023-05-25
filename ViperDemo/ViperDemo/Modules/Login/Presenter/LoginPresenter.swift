@@ -9,7 +9,7 @@ import UIKit
 class LoginPresenter {
     
     weak var view: LoginViewProtocol?
-    private let loginRouter:LoginRouting
+    private let loginRouter: LoginRouting
     var interactor: LoginViewInteractorProtocol?
     
     init (loginRouter: LoginRouting) {
@@ -28,7 +28,7 @@ extension LoginPresenter: LoginViewPresentation {
         self.showHomeView()
     }
     
-    func loginFailure(errorMessage:String) {
+    func loginFailure(errorMessage: String) {
         view?.hideActivityIndicator()
         view?.onLoginFailure(errorMessage:errorMessage)
     }

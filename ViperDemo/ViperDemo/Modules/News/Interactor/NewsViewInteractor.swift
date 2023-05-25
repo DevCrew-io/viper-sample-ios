@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NewsViewInteractor:NewsViewInteractorInputProtocol {
+class NewsViewInteractor: NewsViewInteractorInputProtocol {
     
     weak var presenter: NewsViewInteractorOutputProtocol?
     var remoteDatamanager: NewsRemoteDataManagerInputProtocol?
@@ -19,7 +19,7 @@ class NewsViewInteractor:NewsViewInteractorInputProtocol {
     
 }
 
-extension NewsViewInteractor:NewsRemoteDataManagerOutputProtocol {
+extension NewsViewInteractor: NewsRemoteDataManagerOutputProtocol {
     func onRetriveList(with news: News) {
         presenter?.didRetrievePosts(news)
     }

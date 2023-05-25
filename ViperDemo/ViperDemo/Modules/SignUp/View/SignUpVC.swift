@@ -10,11 +10,11 @@ import PKHUD
 
 class SignUpVC: UIViewController {
     // MARK: - UIControlls
-    private let scrollView :UIScrollView = {
+    private let scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         return scrollView
     }()
-    private let logoImageView:UIImageView = {
+    private let logoImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "logo")
         imageView.tintColor = .gray
@@ -54,7 +54,7 @@ class SignUpVC: UIViewController {
         return field
     }()
     
-    private let signUpButton:UIButton = {
+    private let signUpButton: UIButton = {
         let button = UIButton()
         button.setTitle("Sign Up", for: .normal)
         button.setTitleColor(.white, for: .normal)
@@ -113,7 +113,7 @@ class SignUpVC: UIViewController {
         
         
     }
-    func alertSignUpError(message:String) {
+    func alertSignUpError(message: String) {
         let alert = UIAlertController(title: "Oops",
                                       message: message,
                                       preferredStyle: .alert)
@@ -125,7 +125,7 @@ class SignUpVC: UIViewController {
     
 }
 // MARK: - UITextField Delegate
-extension SignUpVC:UITextFieldDelegate {
+extension SignUpVC: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == emailField {
             passwordField.becomeFirstResponder()

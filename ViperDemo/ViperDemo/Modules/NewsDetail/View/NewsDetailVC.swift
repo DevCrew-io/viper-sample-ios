@@ -10,10 +10,10 @@ import UIKit
 class NewsDetailVC: UIViewController {
     
     // MARK: - IBOutlets
-    @IBOutlet weak var headerImage:UIImageView!
-    @IBOutlet weak var newsHeadingLabel:UILabel!
-    @IBOutlet weak var newsTimeLabel:UILabel!
-    @IBOutlet weak var newsDetailTextView:UITextView!
+    @IBOutlet weak var headerImage: UIImageView!
+    @IBOutlet weak var newsHeadingLabel: UILabel!
+    @IBOutlet weak var newsTimeLabel: UILabel!
+    @IBOutlet weak var newsDetailTextView: UITextView!
     
     // MARK: - Properties
     var presenter: NewsDetailPresentation?
@@ -27,7 +27,7 @@ class NewsDetailVC: UIViewController {
     }
     
     // MARK: - IBAction
-    @IBAction func backButtonPressed(sender:UIButton) {
+    @IBAction func backButtonPressed(sender: UIButton) {
         
         presenter?.dismissNewsDetailView()
     }
@@ -45,7 +45,7 @@ class NewsDetailVC: UIViewController {
 
 extension NewsDetailVC: NewsDetailView {
    
-    func populateUIWithData(_ article:Article) {
+    func populateUIWithData(_ article: Article) {
         self.newsTimeLabel.text = DateHelper.formatPublished(article.publishedAt ?? "")
         self.newsHeadingLabel.text = article.title
         headerImage.kf.indicatorType = .activity

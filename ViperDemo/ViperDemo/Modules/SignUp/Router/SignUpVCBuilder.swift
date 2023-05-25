@@ -8,7 +8,7 @@
 import UIKit
 
 class SignUpVCBuilder {
-    static func build()->UIViewController {
+    static func build()-> UIViewController {
         let view = SignUpVC()
         let router = SignUpRouter(viewController: view)
         let presenter = SignUpPresenter(router: router)

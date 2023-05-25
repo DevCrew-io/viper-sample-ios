@@ -8,8 +8,8 @@
 import Foundation
 
 protocol LocalDataStorageInterface {
-    func storeUser(email:String)
-    func userAlreadyLogedIn(forKey:String)-> Bool!
+    func storeUser(email: String)
+    func userAlreadyLogedIn(forKey: String)-> Bool!
 }
 
 class LocalDataStorage: LocalDataStorageInterface {

@@ -8,7 +8,7 @@
 import Foundation
 
 class SignUpPresenter {
-    weak var view:SignUpViewProtocol?
+    weak var view: SignUpViewProtocol?
     var router: SignUpRouting?
     var interactor: SignUpViewInteractor?
     
@@ -19,7 +19,7 @@ class SignUpPresenter {
 }
 
 extension SignUpPresenter: SignUpViewPresentation {
-    func signUp(email:String,password:String) {
+    func signUp(email: String,password: String) {
         view?.showActivityIndicator()
         self.interactor?.didCreateUser(email:email , password: password)
     }
