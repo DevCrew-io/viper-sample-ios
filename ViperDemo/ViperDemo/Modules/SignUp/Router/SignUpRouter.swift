@@ -9,19 +9,21 @@ import UIKit
 
 class SignUpRouter {
     
-    private let viewController:UIViewController
+    private let viewController: UIViewController
     init(viewController: UIViewController) {
         self.viewController = viewController
     }
 }
 
-extension SignUpRouter:SignUpRouting {
+extension SignUpRouter: SignUpRouting {
     func dismissSignUp() {
         self.viewController.dismiss(animated: true)
     }
     
-    func showHome() {
-        
+    func showNewsView() {
+        let vc = NewsViewBuilder.build()
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.window?.rootViewController = vc
     }
     
     

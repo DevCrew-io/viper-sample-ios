@@ -10,7 +10,9 @@ import UIKit
 
 class WindowPresenter {
     
-    private let router:WindowRouter
+   weak var view: windowViewProtocol?
+    var interactor: WindowInteractorProtocol?
+    private let router: WindowRouter
     
     init(router: WindowRouter) {
         self.router = router
@@ -19,6 +21,7 @@ class WindowPresenter {
 }
 
 extension WindowPresenter: WindowPresentation {
+   
     func initialized() {
         self.router.routTo(kind: .login)
     }

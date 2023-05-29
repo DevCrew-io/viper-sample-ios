@@ -8,13 +8,20 @@
 import Foundation
 
 // MARK: - VIEW -> PRESENTER
-protocol WindowPresentation {
-    func initialized()
+protocol windowViewProtocol: AnyObject {
+    var presenter: WindowPresentation? {get set}
 }
 // MARK: - PRESENTER -> VIEW
-
+protocol WindowPresentation: AnyObject {
+    var view: windowViewProtocol? {get set}
+    var interactor: WindowInteractorProtocol? {get set}
+    func initialized()
+}
 // MARK: - PRESENTER -> INTERACTOR
-
+protocol WindowInteractorProtocol {
+    var presenter: WindowPresentation? {get set}
+    func userLogedIn()
+}
 
 // MARK: -  INTERACTOR -> PRESENTER
 
@@ -23,5 +30,5 @@ protocol WindowPresentation {
 
 protocol WindowRouting {
     
-    func routTo(kind:WindowRouter.Kind)
+    func routTo(kind: WindowRouter.Kind)
 }

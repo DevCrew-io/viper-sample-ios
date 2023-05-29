@@ -9,24 +9,36 @@ import Foundation
 
 // MARK: - PRESENTER -> VIEW
 protocol LoginViewProtocol: AnyObject {
+    var presenter: LoginViewPresentation? {get set}
+    func onLoginFailure(errorMessage: String)
+    func showActivityIndicator()
+    func hideActivityIndicator()
     
 }
 
 // MARK: - VIEW -> PRESENTER
 protocol LoginViewPresentation: AnyObject {
+    var view: LoginViewProtocol? {get set}
+    var interactor: LoginViewInteractorProtocol? {get set}
+    
+    func login(with email: String,password: String)
     func showSignUp()
     func showHomeView()
+    func loginSuccess()
+    func loginFailure(errorMessage: String)
+    func viewDidLoad()
 }
 
 // MARK: - PRESENTER -> INTERACTOR
-
-
-// MARK: -  INTERACTOR -> PRESENTER
-
+protocol LoginViewInteractorProtocol {
+    var presenter: LoginViewPresentation? {get set}
+    func login(email: String,password: String)
+    func alreadyLogedIn()
+}
 
 // MARK: - PRESENTER -> ROUTER
 
 protocol LoginRouting {
     func showSignUp()
-    func showHome()
+    func showNewsView()
 }

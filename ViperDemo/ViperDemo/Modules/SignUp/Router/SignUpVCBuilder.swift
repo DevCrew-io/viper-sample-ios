@@ -8,13 +8,17 @@
 import UIKit
 
 class SignUpVCBuilder {
-    static func build()->UIViewController {
-        let storyboard = Storyboard.login.instance
-        let signUpVC = storyboard.instantiateViewController(withIdentifier: "SignUpVC") as! SignUpVC
-        let router = SignUpRouter(viewController: signUpVC)
+    static func build()-> UIViewController {
+        let view = SignUpVC()
+        let router = SignUpRouter(viewController: view)
         let presenter = SignUpPresenter(router: router)
-        presenter.view = signUpVC
-        signUpVC.presenter = presenter
-        return signUpVC
+        let interactor = SignupInteractor()
+        let localStorage = LocalDataStorage()
+        interactor.localDataStorage = localStorage
+        presenter.view = view
+        view.presenter = presenter
+        presenter.interactor = interactor
+        interactor.presenter = presenter
+        return view
     }
 }

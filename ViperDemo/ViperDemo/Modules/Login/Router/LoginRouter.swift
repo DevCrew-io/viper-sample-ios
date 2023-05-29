@@ -8,7 +8,7 @@
 import UIKit
 
 class LoginRouter {
-    private let viewController:UIViewController
+    private let viewController: UIViewController
     
     init(viewController: UIViewController) {
         self.viewController = viewController
@@ -18,11 +18,11 @@ class LoginRouter {
 extension LoginRouter: LoginRouting {
     func showSignUp() {
         let vc = SignUpVCBuilder.build()
-        self.viewController.present(vc, animated: true)
+        self.viewController.navigationController?.pushViewController(vc, animated: true)
     }
     
-    func showHome() {
-        let vc = HomeViewBuilder.build()
+    func showNewsView() {
+        let vc = NewsViewBuilder.build()
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.window?.rootViewController = vc
     }

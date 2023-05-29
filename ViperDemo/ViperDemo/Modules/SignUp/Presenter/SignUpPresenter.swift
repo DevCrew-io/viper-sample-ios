@@ -8,8 +8,9 @@
 import Foundation
 
 class SignUpPresenter {
-    weak var view:SignUpViewProtocol?
-    private let router:SignUpRouting
+    weak var view: SignUpViewProtocol?
+    var router: SignUpRouting?
+    var interactor: SignUpViewInteractor?
     
     init(router: SignUpRouting) {
         
@@ -18,8 +19,22 @@ class SignUpPresenter {
 }
 
 extension SignUpPresenter: SignUpViewPresentation {
+    func signUp(email: String,password: String) {
+        view?.showActivityIndicator()
+        self.interactor?.didCreateUser(email:email , password: password)
+    }
+    func onFailure(errorMessage: String) {
+        
+        view?.hideActivityIndicator()
+        view?.onSignUpFailure(error: errorMessage)
+    }
+    func onSuccess() {
+        view?.hideActivityIndicator()
+        self.router?.showNewsView()
+    }
     func dismissSignUpVC() {
-        self.router.dismissSignUp()
+        self.router?.dismissSignUp()
     }
     
 }
+

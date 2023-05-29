@@ -10,17 +10,17 @@ import UIKit
 class WindowRouter {
     
     private unowned let window: UIWindow
-    private var loginView:UIViewController
-    private var homeView:UIViewController
+    private var loginView: UIViewController
+    private var homeView: UIViewController
     
-    typealias SubModules = (loginModule:()->UIViewController,
-                            homeModule:()-> UIViewController)
+    typealias SubModules = (loginModule: ()->UIViewController,
+                            homeModule: ()-> UIViewController)
     enum Kind {
         case login
         case home
     }
     
-    init(_ window: Window ,submodules:SubModules) {
+    init(_ window: Window ,submodules: SubModules) {
         
         self.window = window
         self.loginView = submodules.loginModule()

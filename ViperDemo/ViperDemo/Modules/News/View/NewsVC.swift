@@ -8,12 +8,12 @@
 import UIKit
 import PKHUD
 
-class HomeVC: UIViewController,HomeViewProtocol {
+class NewsVC: UIViewController,NewsViewProtocol {
     
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Properties
-    var presenter: HomeViewPresentation?
+    var presenter: NewsViewPresentation?
     
     var news: [Article] = [] {
         didSet {
@@ -65,17 +65,17 @@ class HomeVC: UIViewController,HomeViewProtocol {
     
     func showActivityIndicator() {
         //PKHUD.sharedHUD.contentView = PKHUDSuccessView()
-        PKHUD.sharedHUD.show()
+        HUD.show(.progress)
     }
     
     func hideActivityIndicator() {
         
-        PKHUD.sharedHUD.hide()
+        HUD.hide()
     }
     
 }
 
-extension HomeVC: UITableViewDataSource, UITableViewDelegate {
+extension NewsVC: UITableViewDataSource, UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -96,6 +96,7 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // presenter.didSelectedNews(self.news[indexPath.row])
+        
+         presenter?.showPostDetail(forPost: self.news[indexPath.row])
     }
 }

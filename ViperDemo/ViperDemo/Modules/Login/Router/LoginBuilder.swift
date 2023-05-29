@@ -9,13 +9,18 @@ import UIKit
 
 class LoginBuilder {
     
-   static func build() -> UIViewController {
-        let storyboard = Storyboard.login.instance
-        let loginVC = storyboard.instantiateViewController(identifier: "LoginVC") as! LoginVC
+    static func build() -> UIViewController {
+        let loginVC =  LoginVC()
+        let navigation = UINavigationController(rootViewController: loginVC)
         let router = LoginRouter(viewController: loginVC)
         let presenter = LoginPresenter(loginRouter: router)
-        loginVC.loginPresenter = presenter
+        let interactor = LoginViewInteractor()
+        let localStorage = LocalDataStorage()
+        interactor.localDataStorage = localStorage
+        loginVC.presenter = presenter
         presenter.view = loginVC
-        return loginVC
+        presenter.interactor = interactor
+        interactor.presenter = presenter
+        return navigation
     }
 }
