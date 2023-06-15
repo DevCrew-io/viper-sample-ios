@@ -86,7 +86,7 @@ The folder structure of the project follows the Viper architecture pattern:
 
 [DevCrew.IO](https://devcrew.io/)
 
-If you have any questions or comments about Nested Collection View, please feel free to contact us at info@devcrew.io.
+If you have any questions or comments about Viper Sample Project, please feel free to contact us at info@devcrew.io.
 
 <h3 align="left">Connect with Us:</h3>
 <p align="left">
